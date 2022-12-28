@@ -1,4 +1,4 @@
-@import "../variables";
+@import "../colors";
 
 .close {
     position: relative;
@@ -19,7 +19,7 @@
         background-color: $white;
         transform: rotate(45deg);
     }
-    
+
     &:after {
         content: "";
         position: absolute;
@@ -31,7 +31,7 @@
         background-color: $white;
         transform: rotate(-45deg);
     }
-    
+
     &:hover {
         opacity: 0.6;
     }

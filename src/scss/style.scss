@@ -1,5 +1,5 @@
-@import "./article/article";
-@import "./brands/brands";
+@import "article";
+@import "brands";
 @import "./buttons/callback";
 @import "./buttons/close";
 @import "./buttons/offer";
@@ -8,24 +8,24 @@
 @import "./buttons/search";
 @import "./buttons/social";
 @import "./buttons/status";
-@import "./footer/footer";
-@import "./header/burger/burger";
-@import "./header/header";
-@import "./mark/mark";
-@import "./menu/menu-footer/contact";
-@import "./menu/menu-footer/lang";
-@import "./menu/menu-footer/menu-footer";
-@import "./menu/menu-header/menu-header";
-@import "./menu/menu-main/menu-main";
-@import "./menu/menu";
-@import "./modals/modal";
-@import "./repairs/repairs";
-@import "./scrollbar/scrollbar";
-@import "./section/section";
-@import "./swiper/swiper";
-@import "./title/title";
-@import "./prices/prices";
-@import "./variables";
+@import "footer";
+@import "burger";
+@import "header";
+@import "mark";
+@import "contact";
+@import "lang";
+@import "menu-footer";
+@import "menu-header";
+@import "menu-main";
+@import "menu";
+@import "modal";
+@import "repairs";
+@import "scrollbar";
+@import "section";
+@import "swiper";
+@import "title";
+@import "prices";
+@import "colors";
 
 
 
