@@ -1,0 +1,73 @@
+@import "../variables";
+
+.read-more {
+    box-sizing: content-box;
+    position: relative;
+    width: 108px;
+    height: 24px;
+    margin: 16px 0;
+    padding-left: 20px;
+    text-align: left;
+
+    font-family: "TTLakes-Medium";
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+
+    &:before {
+        content: "";
+        display: block;
+        width: 7px;
+        height: 7px;
+
+        position: absolute;
+        top: 15%;
+        left: 2px;
+        border-bottom: 2px solid $azure;
+        border-left: 2px solid $azure;
+        border-radius: 20%;
+        transform: rotate(-45deg);
+    }
+
+    &:after {
+        content: "";
+        display: block;
+        width: 7px;
+        height: 7px;
+
+        position: absolute;
+        top:  40%;
+        left: 2px;
+        border-bottom: 2px solid $azure;
+        border-left: 2px solid $azure;
+        border-radius: 20%;
+        transform: rotate(-45deg);
+
+    }
+}
+
+.read-more--state--display {
+    display: none;
+}
+
+.read-more--state-transform::after {
+    content: "";
+    transform: rotate(135deg);
+    top: 55%
+}
+.read-more--state-transform::before {
+    content: "";
+    top: 30%;
+    transform: rotate(135deg);
+}
+
+
+@media (min-width: 768px) {
+    .read-more--state--display {
+        display: block;
+    }
+
+    .read-more {
+        margin-bottom: 32px;
+    }
+}

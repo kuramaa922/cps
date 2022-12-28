@@ -1,0 +1,31 @@
+@import "../variables";
+
+.callback {
+    font-size: 0;
+    background: no-repeat right url(../img/repair.svg);
+    position: relative;
+    margin-left: auto;
+    transition: opacity .2s linear;
+    font-family: 'TTLakes-Medium';
+
+    &:hover {
+        opacity: 0.6;
+    };
+    &:before {
+        content: "";
+        position: absolute;
+        cursor: auto;
+        top: 50%;
+        left: -50%;
+        transform: translateY(-50%);
+        height: 32px;
+        width: 2px;
+        background-color: $one-more-light-gray;
+    }
+}
+
+@media (min-width: 768px) {
+    .callback {
+        margin-left: 42px;
+    }
+}

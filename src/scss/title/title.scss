@@ -1,0 +1,78 @@
+@import "../variables";
+
+.title-wrapper {
+    padding: 24px 0 24px 0;
+    button {
+        display: none;
+        padding-right: 50px;
+    }
+}
+
+
+
+.title {
+
+    position: relative;
+    padding-left: 16px;
+    line-height: 40px;
+    margin: 0;
+
+    &.title__modal {
+        margin-right: auto;
+        margin-top: 40px;
+        margin-bottom: 24px;
+    }
+}
+
+
+
+.active::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color:$azure;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    border-right: 4px solid $azure;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+@media (min-width: 768px) {
+
+    .title-wrapper {
+        padding-bottom: 32px;
+    }
+
+    .title {
+        padding-left: 24px;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    .title-wrapper {
+        display: flex;
+        padding: 40px 0 8px;
+
+        button {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            margin-right: 32px;
+        }
+    }
+
+    .title {
+        padding-left: 32px;
+        margin-right: auto;
+    }
+
+    .callback::before {
+        content: none;
+    }
+}

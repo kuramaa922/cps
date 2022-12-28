@@ -1,0 +1,135 @@
+@import "./article/article";
+@import "./brands/brands";
+@import "./buttons/callback";
+@import "./buttons/close";
+@import "./buttons/offer";
+@import "./buttons/order";
+@import "./buttons/read-more";
+@import "./buttons/search";
+@import "./buttons/social";
+@import "./buttons/status";
+@import "./footer/footer";
+@import "./header/burger/burger";
+@import "./header/header";
+@import "./mark/mark";
+@import "./menu/menu-footer/contact";
+@import "./menu/menu-footer/lang";
+@import "./menu/menu-footer/menu-footer";
+@import "./menu/menu-header/menu-header";
+@import "./menu/menu-main/menu-main";
+@import "./menu/menu";
+@import "./modals/modal";
+@import "./repairs/repairs";
+@import "./scrollbar/scrollbar";
+@import "./section/section";
+@import "./swiper/swiper";
+@import "./title/title";
+@import "./prices/prices";
+@import "./variables";
+
+
+
+@font-face {
+  font-family: "TTLakes-Regular";
+  src: url("../fonts/TTLakes-Regular.woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "TTLakes-Medium";
+  src: url("../fonts/TTLakes-Medium.woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "TTLakes-Bold";
+  src: url("../fonts/TTLakes-Bold.woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-size: 14px;
+  font-family: "TTLakes-Regular";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.body--overflow--hidden{
+  overflow: hidden;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+button {
+  border: 0;
+  padding: 0;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.content {
+  max-width: 1120px;
+  margin: 0 auto;
+  background-color: #F8F8F8;
+
+}
+
+.main {
+  border-top: 1px solid #D9FFF5;
+}
+
+h1 {
+  font-family: 'TTLakes-Medium';
+  font-size: 28px;
+}
+
+
+
+
+@media (min-width: 768px) {
+    .container {
+      padding: 0 24px;
+    }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    padding: 0 32px;
+  }
+
+  .main {
+    width: 1120px;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .content {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .wrapper {
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,91 @@
+@import "../variables";
+
+.prices-mobile--state--display, .prices--state--display {
+    display: none;
+}
+
+.prices__suptitle {
+    color: $dark-gray;
+}
+
+
+@media(max-width: 767px) {
+
+    .prices-mobile--state--display {
+        display: flex;
+    }
+    .prices-mobile {
+        height: 200px;
+
+        .prices-mobile__item {
+            display: grid;
+            position: relative;
+            height: 200px;
+            padding: 16px 0 20px 16px;
+        }
+    }
+    
+    
+}
+
+@media(min-width: 768px) {
+
+    .prices--state--display {
+        display: flex;
+    }
+
+    .prices {
+        display: flex;
+        flex-direction: column;
+        border-collapse: collapse;
+        padding-right: 32px;
+
+        .prices__suptitles {
+            display: flex;
+            padding-bottom: 16px;
+        }
+
+        .prices__row {
+            display: flex;
+            padding: 23px 0;
+            
+            height: 64px;
+            background-color: $white;
+            position: relative;  
+            &:nth-child(2) {
+                border-radius: 10px;
+            }
+            &:last-child {
+                border-radius: 10px;
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 14px;
+                margin: auto;
+                display: block;
+                width: 96%;
+                height: 1px;
+                background-color: $one-more-light-gray;
+        
+            }
+            &last-child::after {
+                display: none;
+            }
+        }
+
+        .prices__service {
+            width: 45%;
+            padding-left: 16px;
+        }
+    
+        .prices__cost {
+            width: 20%;
+        }
+    
+        .prices__time  {
+            width: 35%;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.status {
+    font-size: 0;
+    background: no-repeat right url(../../src/img/status.svg);
+    transition: opacity 0.2s linear;
+    font-family: 'TTLakes-Medium';
+
+    &:hover {
+        opacity: 0.6;
+    }
+}

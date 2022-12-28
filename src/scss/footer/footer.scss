@@ -1,0 +1,29 @@
+@import "../variables";
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-top: 1px solid $light-azure;
+    padding-top: 16px;
+
+    .footer__text {
+        text-decoration: none;
+        padding: 0 20px 16px;
+        color: $gray;
+    }  
+}
+
+
+
+@media(min-width: 768px) {
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 32px;
+
+        .footer__text {
+            width: 33%;
+        }
+    }
+}

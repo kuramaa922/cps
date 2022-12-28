@@ -1,0 +1,50 @@
+@import "../../variables";
+
+.menu-main-margin{
+    margin-top: 22px;
+    margin-bottom: 20px;
+}
+
+.menu-main {
+
+    .menu-main__nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-main__button  {
+        position: relative;
+        padding: 12px 0 12px 24px;
+        font-size: 16px;
+        cursor: pointer;
+
+        span {
+            transition: color .1s linear;
+        }
+
+        &:hover > span{
+            color: $gray;
+        }
+    }
+}
+
+.menu-main__button--selected {
+    color: $gray;
+
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        background-color: $azure;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0%;
+        border-right: 4px solid $azure;
+        border-top: 10px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+}
+
+

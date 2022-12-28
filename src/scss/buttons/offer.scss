@@ -1,0 +1,37 @@
+@import "../variables";
+
+.offer {
+    display: block;
+    position: relative;
+    padding: 10px 16px 40px 20px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    font-family: 'TTLakes-Medium';
+
+    .offer__arrow {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+
+        transform: translateY(-50%);
+        transform: rotate(45deg);
+        border-top: 2px solid $purple;
+        border-right: 2px solid $purple;
+    }
+}
+
+@media(min-width: 768px) {
+    .offer {
+        width: 50%;
+        padding: 0 0 45px 24px;
+    }
+}
+
+@media(min-width: 1120px) {
+    .offer{
+        width: 40%;
+        padding: 0 0 50px 32px;
+
+    }
+}
