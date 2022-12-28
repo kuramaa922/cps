@@ -1,4 +1,4 @@
-.brands__item {
+.brands__item.swiper-slide {
     width: 240px;
     height: 72px;
     flex-shrink: 0;
@@ -11,14 +11,14 @@
 
 @media (min-width: 768px) {
 
-    .brands {
+    .brands.swiper-wrapper {
         display: grid;
         grid-template-areas:
         "el el el"
         "el el el"
         "el el el";
         justify-items: center;
-        gap: 16px 15px;
+        gap: 1rem 1rem !important;
 
         .brands__item {
             width: 224px;
@@ -28,7 +28,7 @@
 }
 
 @media (min-width: 1120px) {
-    .brands {
+    .brands.swiper-wrapper {
         grid-template-areas:
         "el el el el"
         "el el el el"

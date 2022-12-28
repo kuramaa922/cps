@@ -3,6 +3,9 @@
 import "./../scss/style.scss";
 import './menu';
 import './modals';
+import 'swiper/modules/pagination/pagination.scss'
+import 'swiper/swiper.scss'
+import Swiper, { Pagination } from 'swiper';
 
 const readMore = document.querySelectorAll('.read-more');
 const repairs = document.querySelector('.swiper-repairs');
@@ -36,6 +39,7 @@ showContent('read-more--text', text);
 
 if(window.matchMedia("(max-width: 767px)").matches) {
     const swiper = new Swiper(".swiper", {
+    modules: [Pagination],
     centeredSlidesBounds: true,
     slidesPerView: 1.2,
     spaceBetween: 20,

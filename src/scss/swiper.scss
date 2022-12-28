@@ -1,27 +1,34 @@
 @import "colors";
 
+.swiper {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
 @media(max-width: 767px) {
     .swiper {
         display: block;
         width: 100%;
-        padding-top: 16px;
-        padding-bottom: 24px;
-        padding-right: 16px;
+        padding-top: 16px !important;
+        padding-bottom: 24px !important;
+        padding-right: 16px !important;
     }
 
     .swiper-wrapper {
         padding-bottom: 16px;
         height: auto;
+        width: auto;
     }
 
     .swiper-pagination-bullet {
-        width: 10px;
-        height: 10px;
+        width: 12px !important;
+        height: 12px !important;
         background-color: $light-gray;
     }
 
     .swiper-pagination-bullet-active {
-        background-color: $gray;
+        background-color: $black !important;
+        opacity: 0.5 !important;
     }
 }
 
@@ -32,14 +39,14 @@
 @media(min-width: 768px) {
     .swiper {
         margin: 0;
-        padding-right: 24px;
+        padding-right: 24px !important;
         height: 160px;
     }
 }
 
 @media(min-width: 1120px) {
     .swiper {
-        padding-right: 32px;
+        padding-right: 32px !important;
     }
 }
 

@@ -4,6 +4,7 @@
 
     .repairs__item {
         height: 160px;
+        min-width: 100%;
     }
 
     .repairs__text {
@@ -26,7 +27,7 @@
 
 @media (min-width: 768px) {
     .repairs {
-        display: grid;
+        display: grid !important;
         grid-template-areas:
         "el el el"
         "el el el"
@@ -37,10 +38,11 @@
 
 @media (min-width: 1220px) {
     .repairs {
-        display: grid;
+        display: grid !important;
         grid-template-areas:
         "el el el el"
         "el el el el"
         "el el el el";
+        gap: 24px;
     }
 }
