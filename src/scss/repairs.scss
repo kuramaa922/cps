@@ -1,0 +1,46 @@
+.repairs {
+    position: relative;
+    min-width: 0;
+
+    .repairs__item {
+        height: 160px;
+    }
+
+    .repairs__text {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        color: #1B1C21;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        font-family: 'TTLakes-Medium';
+    }
+
+    .repairs__button {
+        position: absolute;
+        right: 0;
+        top: 45px;
+    }
+}
+
+@media (min-width: 768px) {
+    .repairs {
+        display: grid;
+        grid-template-areas:
+        "el el el"
+        "el el el"
+        "el el el";
+        gap: 24px;
+    }
+}
+
+@media (min-width: 1220px) {
+    .repairs {
+        display: grid;
+        grid-template-areas:
+        "el el el el"
+        "el el el el"
+        "el el el el";
+    }
+}

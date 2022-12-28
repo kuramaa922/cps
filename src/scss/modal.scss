@@ -1,0 +1,87 @@
+@import "colors";
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+
+    height: 100%;
+    background: #ffffffd5;
+
+
+    .modal__dialog {
+        display: flex;
+        margin: auto;
+        top:0;
+        left: 0;
+        height: 100%;
+
+    }
+
+    .modal__img {
+        position: relative;
+        z-index: 1;
+    }
+
+    .modal__form {
+        border-left: 1px solid $light-azure;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: -10px -10px 13px 7px rgb(204, 204, 204);
+        z-index: 2;
+        width: 320px;
+        margin-left: auto;
+
+    }
+
+    .modal__input {
+        padding: 12px 16px;
+        width: 90%;
+        border: 1px solid $one-more-light-gray;
+        border-radius: 8px;
+
+        font-family: "TTLakes-Medium";
+        font-size: 16px;
+
+        margin-bottom: 16px;
+
+        &::placeholder {
+            color: #B5B6BC;
+        }
+    }
+
+    .modal__note {
+        padding: 12px 32px;
+
+    }
+
+    .modal__input--text {
+        height: 120px;
+    }
+
+    .modal__link {
+        font-family: "TTLakes-Medium";
+        color: #FF3E79;
+        text-decoration: none;
+
+    }
+}
+
+.modal--show {
+    display: block;
+}
+
+
+
+
+@media (min-width: 1440px) {
+    .modal__form {
+        width: 440px !important;
+    }
+}
+
