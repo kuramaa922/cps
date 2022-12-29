@@ -741,6 +741,10 @@
 .modal--show {
   display: block; }
 
+.title__modal {
+  font-size: 24px;
+  font-family: 'TTLakes-Medium'; }
+
 @media (min-width: 1440px) {
   .modal__form {
     width: 440px !important; } }
